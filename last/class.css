@@ -1,0 +1,44 @@
+input[type=number]{
+    padding: 8px 8px;
+    margin:8px;
+    box-sizing: border-box;
+    background-color: bisque;
+    color: aliceblue;
+    border-radius: 10px;
+}
+input[type=text]{
+    padding: 8px 8px;
+    margin:8px;
+    box-sizing: border-box;
+    background-color: bisque;
+    color: aliceblue;
+    border-radius: 10px;
+}
+input[type=datetime-local]{
+    padding: 8px 8px;
+    margin:8px;
+    box-sizing: border-box;
+    background-color: bisque;
+    color: aliceblue;
+    border-radius: 10px;
+}
+body{
+    color: aliceblue;
+    width: 400;
+    height:300;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+.bt{
+    background-color: bisque;
+    border:none;
+    color: rgb(14, 15, 15);
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    width: 170px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking details</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body> <style>
+     body{
+background-image: url("book.webp");
+image-rendering: crisp-edges;
+}
+input[type=text]{
+    padding: 8px 8px;
+    margin:8px;
+    box-sizing: border-box;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+input[type=datetime-local]{
+    padding: 8px 8px;
+    margin:8px;
+    box-sizing: border-box;
+    background-color: bisque;
+    color: rgb(7, 7, 7);
+    border-radius: 10px;
+}
+body{
+    color: rgb(12, 12, 12);
+    width: 400;
+    height:300;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+   
+</style>
+    <form method="post" action="/booking_details" ><br><br><br><br><br><br>
+            <label>booking mode</label>         
+            <input type="text" class="form-control" name="mode" id=""> <br> <br>  
+            <label>no of seats</label>     
+            <input type="number" class="form-control" name="no_of_seats" id=""> <br> <br>  
+            <label>seat id</label>         
+            <input type="number" class="form-control" name="seat_id" id=""><br> <br>
+            <label>booking date</label>         
+            <input type="datetime-local" class="form-control" name="date" id=""><br> <br>
+            <label>movie id</label>         
+            <input type="number" class="form-control" name="movie_id" id=""> <br> <br>
+            <label>Amount</label>         
+            <input type="number" class="form-control" name="amount" id=""> <br> <br><br>
+            <button type="submit" class="bt">ADD</button>  
+    </form>   
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theater</title>
+    <link rel="stylesheet" href="class.css"
+</head>
+<body align="center"><br><br><br><br><br><br><br><br><br><br>
+        <style>
+             body{
+                background-image: url("pop.jpg");
+            }
+            input[type=text]{
+    padding: 8px 8px;
+    margin:8px;
+    box-sizing: border-box;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+input[type=datetime-local]{
+    padding: 8px 8px;
+    margin:8px;
+    box-sizing: border-box;
+    background-color: bisque;
+    color: rgb(7, 7, 7);
+    border-radius: 10px;
+}
+input[type=number]{
+    padding: 8px 8px;
+    margin:8px;
+    box-sizing: border-box;
+    background-color: bisque;
+    color: rgb(7, 7, 7);
+    border-radius: 10px;
+}
+body{
+    color: rgb(12, 12, 12);
+    width: 400;
+    height:300;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+    </style>
+    <form  method="post" action="/theatre_insert" >
+            <label>Total No of screens</label>         
+            <input type="number" class="form-control" name="noscreens" placeholder="screen no." id=""> <br> <br>  
+            <label >Theatre id</label> &nbsp;     
+            <input type="number" class="form-control" name="ids"  placeholder="theater id" id=""> <br> <br>  
+            <label>reservation type</label>         
+            <input type="text" class="form-control" name="rtype"  placeholder="reservation type" id=""><br> <br>
+            <button type="submit" class="bt" >SUBMIT</button>  
+    </form>   
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body align="center">
+    <style>
+        body{
+    background-image: url("theater.jpg");
+}
+   </style>
+    <form  method="post" action="/movie_insert" ><br><br>
+             
+            <label>Movie id</label>     
+            <input type="number" class="form-control" name="movie_id" id=""> <br> <br>  
+            <label>Movie</label>         
+            <input type="text" class="form-control" name="name" id=""> <br> <br> 
+            <label>Date</label>         
+            <input type="datetime-local" class="form-control" name="date" id=""><br> <br>
+            <label>Genre</label>         
+            <input type="text" class="form-control" name="genre" id=""> <br> <br>
+            <label>Rated</label>         
+            <input type="text" class="form-control" name="Rated" id=""> <br> <br>
+            <label>Duration</label>         
+            <input type="number" class="form-control" name="duration" id=""> <br> <br>
+            <label>Screen No</label>         
+            <input type="number" class="form-control" name="screen_no" id=""> <br> <br>
+            <label>No of Seats booked</label>         
+            <input type="number" class="form-control" name="no_of_seats_booked" id=""> <br> <br><br>
+            
+            <button type="submit" class="bt">ADD</button>  
+    </form>   
+</body>
+</html>
