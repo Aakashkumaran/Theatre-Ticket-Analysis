@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tollgate.css"> 
+</head>
+<body>
+    <h1>Update in reservation id</h1>
+    <form action="/uquery4/ans" method="post">
+        <label class="form-label">Enter Reservation ID: 
+            <select name="reservation_id" id="plactype">
+                <% for(var i=0; i < data.length; i++) { %>
+                    <option value="<%= data[i].reservation_id %>"><%= data[i].reservation_id %></option>
+               <% } %>
+            </select>
+        </label><br><br>
+        <label class="form-label">Enter the reservation ID: 
+           <input type="number" name="reservation_id">
+        </label><br>
+        <br>      
+      <input type="submit" class="button-64">
+    </form>
+</body>
+</html>

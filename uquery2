@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tollgate.css"> 
+</head>
+<body>
+    <h1>Update in the Screen Number</h1>
+    <form action="/uquery2/ans" method="post">
+        <label class="form-label">Enter movie ID: 
+            <select name="movie_id" id="plactype">
+                <% for(var i=0; i < data.length; i++) { %>
+                    <option value="<%= data[i].id %>"><%= data[i].id %></option>
+               <% } %>
+            </select>
+        </label><br><br>
+        <label class="form-label">Enter the Screen no:
+            <input type="tel" name="screen_no" id="screen_no">
+             </label>
+             <br>
+      <input type="submit" class="button-64">
+    </form>
+</body>
+</html>
