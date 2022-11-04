@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tollgate.css"> 
+</head>
+<body align="center">
+    <style>body{
+        background-image: url("greybg.png");
+        width: 400;
+        height:300;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+    .bt{
+        background-color: bisque;
+        border:none;
+        color: rgb(14, 15, 15);
+        padding: 15px 40px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        width: 170px;
+    }
+    </style>
+    <h1>Delete in booking mode</h1>
+    <form action="/dquery4/ans" method="post">
+        <label class="form-label">Enter booking mode: 
+            <select name="mode" id="plactype">
+                <% for(var i=0; i < data.length; i++) { %>
+                    <option value="<%= data[i].mode %>"><%= data[i].mode %></option>
+               <% } %>
+            </select>
+        </label><br><br>      
+      <input type="submit" class="bt">
+    </form>
+</body>
+</html>
